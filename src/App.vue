@@ -93,21 +93,18 @@ onMounted(() => {
           </label>
           
           <div class="todo-content">
-  <input type="text" v-model="todo.content" />
-  <p class="timestamp">
-    {{ new Date(todo.createdAt).toLocaleString('en-US', { 
-      hour: 'numeric', 
-      minute: 'numeric', 
-      second: 'numeric', 
-      hour12: true, 
-      day: '2-digit', 
-      month: '2-digit', 
-      year: 'numeric' 
-    }) }}
-  </p>
-</div>
-
-
+            <input type="text" v-model="todo.content" />
+            <p class="timestamp">
+              {{ new Date(todo.createdAt).toLocaleString('en-US', { 
+                hour: 'numeric', 
+                minute: 'numeric', 
+                hour12: true, 
+                day: '2-digit', 
+                month: 'long', 
+                year: 'numeric' 
+              }) }}
+            </p>
+          </div>
           <div class="actions">
             <button class="delete" @click="removeTodo(todo)">Delete</button>
           </div>
