@@ -1,6 +1,6 @@
 :root {
-	--primary: #3A82EE;
-	--business: #db2525;
+	--primary: #db2525;
+	--business: #3A82EE;
 	--personal: var(--primary);
 	--light: #EEE;
 	--grey: #888;
@@ -9,8 +9,8 @@
 
 	--shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
-	--business-glow: 0px 0px 4px rgba(239, 15, 15, 0.92);
-	--personal-glow: 0px 0px 4px rgba(35, 112, 228, 0.904);
+	--business-glow: 0px 0px 4px rgba(35, 112, 228, 0.904);
+	--personal-glow: 0px 0px 4px rgba(239, 15, 15, 0.92);
 }
 
 * {
